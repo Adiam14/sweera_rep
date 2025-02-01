@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Sweera, Embrace Sustainability, eco friendly, business networking, entrepreneurship, sustainable gifting, green living, choose green, environmental awareness, eco-conscious choices">
+    <meta name="author" content="Sweera by Pinetrunk Enterprises">
+    <meta name="description" content="Sweera promotes eco-friendly solutions and sustainable living. Choose Green because there is only one Earth.">
+    <title>Sweera</title>
+    <style>
+      body {
+          margin: 0;
+          font-family: 'Poppins', sans-serif;
+          background-color: #fffad9;
+      }
+    
+      .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #2e7d32 !important;
+          padding: 10px 20px !important;
+      }
+    
+      .header .logo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+    
+      .header .logo img {
+          max-height: 70px;
+      }
+    
+      /* Tagline Primary - Positioned below the logo image, aligned right */
+      .header .logo .tagline-primary {
+          font-size: 8px; /* Small font size */
+          color: black;
+          margin-top: 5px; /* Space below the logo */
+          align-self: flex-end; /* Align tagline to the right */
+      }
+    
+      /* Tagline Secondary - Bold, centered below both logo and tagline primary */
+      .header .logo .tagline-secondary {
+          font-size: 10px; /* Small font size */
+          color: black;
+          font-weight: bold;
+          margin-top: 5px; /* Space below tagline primary */
+          align-self: center; /* Center tagline */
+      }
+    
+      /* Responsive design for small screens */
+      @media (max-width: 768px) {
+          .header .logo .tagline-primary {
+              font-size: 6px; /* Smaller font size on smaller screens */
+          }
+    
+          .header .logo .tagline-secondary {
+              font-size: 8px; /* Smaller font size on smaller screens */
+          }
+      }
+    
+      .nav {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+      }
+    
+      .nav a {
+          color: white;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: bold;
+      }
+    
+      .nav a:hover {
+          text-decoration: none;
+      }
+    
+      .dropdown {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #2e7d32 !important;
+          color: white;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+    
+      .dropdown a {
+          display: block;
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+          margin: 5px 0;
+      }
+    
+      .dropdown a:hover {
+          text-decoration: none;
+      }
+    
+      .nav-item {
+          position: relative;
+      }
+    
+      .nav-item:hover .dropdown {
+          display: block;
+      }
+    
+      /* Responsive Design */
+      .hamburger {
+          display: none;
+          font-size: 24px;
+          cursor: pointer;
+          color: white;
+          transition: transform 0.3s ease;
+      }
+    
+      .hamburger.active {
+          transform: rotate(0deg);
+      }
+    
+      .hamburger span {
+          display: block;
+          width: 25px;
+          height: 3px;
+          margin: 5px auto;
+          background-color: white;
+          transition: all 0.3s ease;
+      }
+    
+      .hamburger.active span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+      }
+    
+      .hamburger.active span:nth-child(2) {
+          opacity: 0;
+      }
+    
+      .hamburger.active span:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -5px);
+      }
+    
+      .mobile-nav {
+          display: none;
+          flex-direction: column;
+          background-color: black;
+          padding: 20px;
+      }
+    
+      .mobile-nav a {
+          padding: 10px 0;
+          font-size: 18px;
+          color: white;
+          text-decoration: none;
+      }
+    
+      .mobile-nav a:hover {
+          text-decoration: none;
+      }
+    
+      .mobile-dropdown {
+          display: none;
+          flex-direction: column;
+          padding-left: 20px;
+      }
+    
+      .mobile-nav .toggle {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+    
+      .mobile-nav .toggle a {
+          margin: 0;
+      }
+    
+      .dropdown-toggle {
+          cursor: pointer;
+          color: white;
+          font-size: 18px;
+          transition: transform 0.3s;
+      }
+    
+      .dropdown-toggle.open {
+          transform: rotate(90deg);
+      }
+    
+      @media (max-width: 768px) {
+          .nav {
+              display: none;
+          }
+    
+          .hamburger {
+              display: block;
+          }
+    
+          .mobile-nav {
+              display: flex;
+          }
+      }
+    </style>
+</head>
+<body>
+<header>
+  <header class="header">
+      <div class="logo">
+          <img src="sweera1.png" alt="Logo" style="align-items: center;">
+      </div>
+      <nav class="nav">
+          <a href="#home"><i class="fas fa-home"></i> Home</a>
+          <div class="nav-item">
+              <a href="#about-us"><i class="fas fa-info-circle"></i> About Us</a>
+          </div>
+          <div class="nav-item">
+              <a href="#our-story"><i class="fas fa-history"></i> Our story</a>
+          </div>
+          <div class="nav-item">
+            <a href="#products-section"><i class="fas fa-gift"></i> Products</a>
+        </div>
+        <div class="nav-item">
+          <a href="#testimonials"><i class="fas fa-users"></i> Testimonials</a>
+      </div>
+
+          
+      <a href="https://wa.me/9573527550?text=Hi" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> Get in Touch</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </header>
+  
+  <nav class="mobile-nav" id="mobileNav">
+      <div class="toggle">
+          <a href="#home"><i class="fas fa-home"></i> Home</a>
+      </div>
+      <div class="toggle">
+          <a href="#about-us"><i class="fas fa-info-circle"></i> About Us</a>
+      </div>
+      <div class="toggle">
+          <a href="#our-story"><i class="fas fa-history"></i> Our story</a>
+      </div>
+      <div class="toggle">
+        <a href="#products-section"><i class="fas fa-gift "></i> Products</a>
+    </div>
+    <div class="toggle">
+      <a href="#testimonials"><i class="fas fa-users "></i>Testimonials</a>
+  </div>
+      <div class="toggle">
+        <a href="https://wa.me/9573527550?text=Hi" target="_blank" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> Get in Touch</a>
+      </div>
+  </nav>
+  
+  <style>
+    /* Header Styles */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color:  #2e7d32 !important ;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-size: 18px;
+    }
+  
+    /* Logo and Tagline */
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 120px;
+    }
+  
+    .logo img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5px;
+    }
+  
+    /* Tagline Primary */
+    .tagline-primary {
+      font-size: 12px; /* Small font size */
+      color: white;
+  
+      margin-top: 5px;
+      text-align: right; /* Align text to the right */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    /* Tagline Secondary */
+    .tagline-secondary {
+      font-size: 14px; /* Slightly larger font size */
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    
+  
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+  
+    .nav-item .dropdown a {
+      font-size: 18px;
+      color: white;
+      margin: 10px 0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+  
+    .nav-item .dropdown a:hover {
+      color: #2e7d32 !important; /* Highlight color */
+    }
+  
+    /* Navigation Links */
+    .nav a {
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+  
+    .nav a:hover {
+      color: #fff8c3;
+    }
+  
+    .nav a i {
+      margin-right: 10px;
+    }
+  
+    /* Mobile Navigation */
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color:#2e7d32 !important;
+      padding: 20px;
+    }
+  
+    .mobile-dropdown {
+      display: none;
+      flex-direction: column;
+      padding-left: 20px;
+    }
+  
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .header {
+        flex-wrap: wrap;
+        font-size: 16px; /* Slightly smaller font size for small screens */
+      }
+  
+      .logo {
+        max-width: 100px;
+      }
+  
+      .tagline-primary,
+      .tagline-secondary {
+        font-size: 10px; /* Smaller font sizes for taglines */
+      }
+  
+      .nav {
+        display: none;
+      }
+  
+      .mobile-nav {
+        display: flex;
+      }
+    }
+  </style>  
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  
+  // Automatically open mobile navigation when accessed on smaller screens
+  window.addEventListener('DOMContentLoaded', () => {
+    const isMobile = window.innerWidth <= 768; // Adjust breakpoint as needed
+    if (isMobile) {
+      mobileNav.style.display = 'flex'; // Show mobile navigation by default
+      hamburger.classList.add('active'); // Show hamburger as active
+    } else {
+      mobileNav.style.display = 'none'; // Hide mobile navigation on larger screens
+      hamburger.classList.remove('active'); // Reset hamburger state
+    }
+  });
+  
+  // Toggle mobile navigation on hamburger click
+  hamburger.addEventListener('click', () => {
+    const isActive = hamburger.classList.toggle('active');
+    mobileNav.style.display = isActive ? 'flex' : 'none';
+  });
+  
+  // Close mobile navigation if resized to larger screens
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) { // Adjust breakpoint as needed
+      mobileNav.style.display = 'none'; // Hide mobile nav
+      hamburger.classList.remove('active'); // Reset hamburger state
+    }
+  });
+  </script>  
+</header>
+
+<section id="home">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    #home .slideshow-container {
+      margin-top: 70px;
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+      margin-top: -15px;
+    }
+
+    #home .mySlides {
+      display: none;
+      position: relative;
+    }
+
+    #home img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    #home .text-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    #home .text-container h3 {
+      margin: 10px 0 5px;
+      font-size: 24px;
+    }
+
+    #home .text-container p {
+      margin: 5px 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    #home .prev-slide, #home .next-slide {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    #home .next-slide {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    #home .prev-slide:hover, #home .next-slide:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    #home .dot-slide {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    #home .active-dot, #home .dot-slide:hover {
+      background-color: #000;
+    }
+
+    @media screen and (min-width: 768px) {
+      #home img {
+        height: 100vh; /* Full viewport height for larger screens */
+        object-fit: cover; /* Crop image to cover the area */
+      }
+    }
+  </style>
+
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="banner21.png" style="width:100%">
+     
+    </div>
+
+    <div class="mySlides">
+      <img src="banner2.png" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides">
+      <img src="Green Illustrative Rainforest Day Banner.png" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides">
+      <img src="banner2.png" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides">
+      <img src="banner2.png" style="width:100%">
+      
+    </div>
+
+    <a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+<br>
+  <div style="text-align:center">
+    <span class="dot-slide" onclick="currentSlide(1)"></span>
+    <span class="dot-slide" onclick="currentSlide(2)"></span>
+    <span class="dot-slide" onclick="currentSlide(3)"></span>
+    <span class="dot-slide" onclick="currentSlide(4)"></span>
+    <span class="dot-slide" onclick="currentSlide(5)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    let slideInterval;
+
+    function startSlideshow() {
+      slideInterval = setInterval(() => {
+        slideIndex++;
+        showSlides();
+      }, 10000);
+    }
+
+    function showSlides() {
+      const slides = document.querySelectorAll("#home .mySlides");
+      const dots = document.querySelectorAll("#home .dot-slide");
+
+      if (slideIndex >= slides.length) slideIndex = 0;
+      if (slideIndex < 0) slideIndex = slides.length - 1;
+
+      slides.forEach((slide) => (slide.style.display = "none"));
+      dots.forEach((dot) => dot.classList.remove("active-dot"));
+
+      slides[slideIndex].style.display = "block";
+      dots[slideIndex].classList.add("active-dot");
+    }
+
+    function plusSlides(n) {
+      clearInterval(slideInterval);
+      slideIndex += n;
+      showSlides();
+      startSlideshow();
+    }
+
+    function currentSlide(n) {
+      clearInterval(slideInterval);
+      slideIndex = n - 1;
+      showSlides();
+      startSlideshow();
+    }
+
+    showSlides();
+    startSlideshow();
+  </script>
+</section>
+
+<section id="corporate-gifting">
+  <style>
+      #corporate-gifting {
+          font-family: 'Poppins', sans-serif;
+          background-color: #fffad9;
+          padding: 40px;
+          text-align: center;
+          color: #333;
+      }
+
+      #corporate-gifting h2 {
+          font-size: 2rem;
+          color: #2c3e50;
+          margin-bottom: 20px;
+      }
+
+      #corporate-gifting p {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          margin: 10px auto;
+          max-width: 700px;
+      }
+
+      #corporate-gifting a {
+          display: inline-block;
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #2c3e50;
+          color: #fff;
+          text-decoration: none;
+          font-size: 1rem;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+      }
+
+      #corporate-gifting a:hover {
+          background-color: #1abc9c;
+      }
+  </style>
+  
+  <h2>Corporate Gifting with Sweera</h2>
+  <p>Celebrate sustainability with handcrafted Kauna Grass and Palm Leaf products, perfect for your corporate gifting needs.</p>
+  <p>Each piece is made with care by skilled artisans. We take bulk orders but request patience, as every item is uniquely handmade.</p>
+ 
+  <a href="https://wa.me/9573527550?text=Hi" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat with us on WhatsApp</span>
+  </a>
+  
+</section>
+
+<section id="about-us">
+  <h1 style="text-align: center; color: #2e7d32;">About Us</h1>
+  <div class="about-container">
+    <!-- Left Column: Image -->
+    <div class="image-column">
+      <img src="basket2.png" alt="Artisans weaving" />
+    </div>
+
+    <!-- Right Column: Text -->
+    <div class="text-column">
+      <h2>Rooted in Tradition, Designed for the Future.</h2>
+      <p>
+        "Sweera by Pine Trunk is more than a brand - it's a movement to preserve and promote the art of handmade products. Our skilled artisans blend tradition with contemporary design to bring unique and sustainable tableware and baskets to your home. Each product tells a story of heritage and innovation, crafted with care to bring beauty and functionality into your home."
+      </p>
+    </div>
+  </div>
+  <style>
+    /* About Us Section */
+    .about-us {
+      padding: 60px 20px;
+      background-color: #fffad9;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .about-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Fixing the image size */
+    .image-column img {
+      width: 100%;
+      max-width: 500px; /* Ensuring image doesn't grow too large */
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-column {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .text-column h2 {
+      font-size: 30px;
+      color: #2c3e50;
+      font-weight: bold;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    .text-column p {
+      font-size: 18px;
+      color: #7f8c8d;
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    /* Responsive Styling for smaller devices */
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-column img {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .text-column {
+        max-width: none;
+        margin-top: 20px;
+      }
+
+      .text-column h2 {
+        font-size: 24px;
+      }
+
+      .text-column p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</section>
+
+
+<section class="vision-mission">
+  <div class="vision">
+    <h2>Vision</h2>
+    <p>"Our vision is to blend the timeless art of weaving with modern design, creating sustainable, handcrafted products that inspire mindful living and connect communities. We strive to promote eco-friendly practices and empower welfare-driven initiatives for a conscious future."</p>
+  </div>
+
+  <div class="mission">
+    <h2>Mission</h2>
+    <p>"At Sweera by Pine Trunk, we empower artisans by preserving traditional craftsmanship, promoting sustainability, and offering eco-friendly products. Our mission is to bridge culture, creativity, and conscious consumption while creating opportunities and inspiring mindful living."</p>
+  </div>
+  <style>
+    /* Vision and Mission Section */
+.vision-mission {
+  padding: 40px;
+  background-color: #fffad9;
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+}
+
+.vision-mission h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.vision-mission p {
+  font-size: 18px;
+  color: #7f8c8d;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+.vision-mission .vision, .vision-mission .mission {
+  margin-bottom: 40px;
+}
+
+.vision-mission .vision p, .vision-mission .mission p {
+  font-weight: 400;
+}
+
+/* Responsive Styling for smaller devices */
+@media (max-width: 768px) {
+  .vision-mission h2 {
+    font-size: 28px;
+  }
+
+  .vision-mission p {
+    font-size: 16px;
+  }
+}
+
+  </style>
+</section>
+
+<section class="green-message">
+  <p>
+    <span class="quote">"</span> It's only one plastic box, said <span class="highlight-green">8 Billion</span> people.<br>
+    But not the <span class="highlight-green">1 Person</span> who gifted you this hamper.<br>
+    Choose <span class="highlight-green">G r e e n</span> because there is only <span class="highlight-green">1 E a r t h</span><span class="quote">"</span>.
+  </p>
+  <style>
+  /* Green Message Section */
+  .green-message {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .green-message p {
+    color: #000; /* Black text for the regular part */
+  }
+  
+  .highlight-green {
+    color: #32CD32; /* Green color for highlighted words */
+    font-weight: bold;
+    letter-spacing: 1px; /* Adds spacing for "Green" and "1 Earth" */
+  }
+  
+  .quote {
+    font-size: 40px; /* Bigger size for the quotation mark */
+    font-family: 'Georgia', serif; /* Stylish font for the quotes */
+    font-weight: bold;
+    color: #000; /* Stylish color for the quotes */
+    position: relative;
+    top: -5px; /* Slightly raised position for the quotes */
+  }
+  
+  /* Responsive Styling for smaller devices */
+  @media (max-width: 768px) {
+    .green-message p {
+      font-size: 18px;
+    }
+  
+    .quote {
+      font-size: 30px; /* Smaller quotes on smaller screens */
+    }
+  }
+  </style>
+</section>
+<section class="our-story">
+  <h1 style="text-align: center; color: #2e7d32;">Our Story</h1>
+  <div class="story-container">
+    <!-- Left Column: Video -->
+    <div class="video-column">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/PmPoS5oyuBw?si=I0ln0VxFjOOjDolB&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Right Column: Message -->
+    <div class="message-column">
+      
+      <h3>Empowering Women through Artistry</h3>
+      <p>
+        "At Sweera by Pine Trunk, we believe in empowering women and preserving the rich heritage of traditional craftsmanship. Our collaboration with Tapasvi NGO plays a vital role in supporting rural artisans, especially women, in their journey towards financial independence. Every piece of handcrafted art tells a story of resilience, passion, and dedication, and we are proud to bring these beautiful creations to the world."
+      </p>
+    </div>
+  </div>
+
+  <style>
+    /* Our Story Section */
+    .our-story {
+      padding: 60px 20px;
+      background-color: #fffad9;
+      font-family: 'poppins', sans-serif;
+    }
+
+    .story-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Video Column - Adjusted for Horizontal Rectangle */
+    .video-wrapper {
+      width: 200%;
+      max-width: 100%; /* Wider for horizontal rectangle */
+      height: 200px; 
+      max-height: 250px;/* Maintain the height to get a rectangular aspect ratio */
+      overflow: hidden;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-column iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Message Column */
+    .message-column {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .message-column h2 {
+      font-size: 30px;
+      color: #2c3e50;
+      font-weight: bold;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    .message-column h3 {
+      font-size: 24px;
+      color: #2c3e50;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    .message-column p {
+      font-size: 18px;
+      color: #7f8c8d;
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    /* Responsive Styling for smaller devices */
+    @media (max-width: 768px) {
+      .story-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .video-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+        max-width: 100%;
+      }
+
+      .message-column {
+        max-width: none;
+        margin-top: 20px;
+      }
+
+      .message-column h2 {
+        font-size: 24px;
+      }
+
+      .message-column h3 {
+        font-size: 20px;
+      }
+
+      .message-column p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</section>
+<section class="image-scroller">
+  <div class="image-container">
+    <!-- Add Images to scroll -->
+    <img src="basket.png" alt="Image 1">
+    <img src="basket2.png" alt="Image 2">
+    <img src="basket3.png" alt="Image 3">
+    <img src="basket4.png" alt="Image 4">
+    <img src="basket5.png" alt="Image 5">
+    <!-- Duplicate Images for seamless loop -->
+    <img src="basket.png" alt="Image 1">
+    <img src="basket2.png" alt="Image 2">
+    <img src="basket3.png" alt="Image 3">
+    <img src="basket4.png" alt="Image 4">
+    <img src="basket5.png" alt="Image 5">
+  </div>
+
+
+<style>
+  /* Container for the scrolling images */
+  .image-scroller {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .image-container {
+    display: flex;
+    animation: scroll-images 20s linear infinite;
+  }
+
+  /* Default image size for larger screens */
+  .image-container img {
+    width: 300px; /* Larger image size for large screens */
+    height: 200px; /* Fixed height */
+    object-fit: cover;
+    margin-right: 20px; /* Space between images */
+  }
+
+  /* Continuous scrolling animation */
+  @keyframes scroll-images {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Responsive styling for small screens */
+  @media (max-width: 768px) {
+    .image-scroller {
+      width: 100%;
+    }
+
+    .image-container img {
+      width: 200px; /* Slightly bigger image size for mobile */
+      height: 130px; /* Adjusted height for mobile */
+      margin-right: 15px; /* Adjust space for smaller screens */
+    }
+  }
+</style>
+</section>
+<section class="products-section" id="products-section">
+  <h2 class="section-title">Our Products</h2>
+  <div class="product-grid">
+    <!-- Product 1: Kauna Baskets -->
+    <div class="product-card">
+      <img src="basket.png" alt="Kauna Baskets" class="product-image">
+      <div class="product-overlay">
+        <h3 class="product-name">Kauna</h3>
+        <p class="product-description">
+          Handwoven baskets that bring an earthy, natural charm to any space.
+        </p>
+        <a href="Sweera_KaunaProducts_FINAL3-28Dec2023.pdf" class="cta-button" target="_blank" download>
+          View All Products
+        </a>
+      </div>
+    </div>
+    
+
+    <!-- Product 2: Palm Leaf Tableware -->
+    <div class="product-card">
+      <img src="palmleaf.png" alt="Palm Leaf Tableware" class="product-image">
+      <div class="product-overlay">
+        <h3 class="product-name">Palm Leaf </h3>
+        <p class="product-description">Eco-friendly tableware made from palm leaves, perfect for a rustic look.</p>
+       
+          
+            <a href="Termcondition.pdf" class="cta-button" target="_blank" download>View All Products</a>
+          
+          
+      </div>
+    </div>
+    <!-- Product 3: Home Décor -->
+    <div class="product-card">
+      <img src="basket5.png" alt="Home Décor" class="product-image">
+      <div class="product-overlay">
+        <h3 class="product-name">River grass</h3>
+        <p class="product-description">Handcrafted home décor to add a personal touch to your living space.</p>
+        
+          
+        <a href="Termcondition.pdf" class="cta-button" target="_blank" download>View All Products</a>
+      </div>
+    </div>
+
+    <!-- Product 4: Seasonal Specials -->
+    <div class="product-card">
+      <img src="water_reed.png" alt="Seasonal Specials" class="product-image">
+      <div class="product-overlay">
+        <h3 class="product-name">Water reed </h3>
+        <p class="product-description">Limited-edition products that celebrate the spirit of the season.</p>
+        
+          
+        <a href="Termcondition.pdf" class="cta-button" target="_blank" download>View All Products</a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="sabai_grass.png" alt="Seasonal Specials" class="product-image">
+      <div class="product-overlay">
+        <h3 class="product-name">Sabai Grass </h3>
+        <p class="product-description">Limited-edition products that celebrate the spirit of the season.</p>
+    
+          
+        <a href="Termcondition.pdf" class="cta-button" target="_blank" download>View All Products</a>
+      </div>
+    </div>
+  </div>
+
+
+<style>
+  /* Products Section */
+  .products-section {
+    padding: 40px 20px;
+    background-color: #fffad9;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2e7d32 !important;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .product-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+
+  .product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-card:hover .product-overlay {
+    opacity: 1;
+  }
+
+  .product-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .product-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #1b5e20;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<script>
+  const imageContainer = document.querySelector('.image-container');
+
+  // On large screens, pause scrolling on hover
+  imageContainer.addEventListener('mouseover', function() {
+    imageContainer.style.animationPlayState = 'paused';
+  });
+
+  imageContainer.addEventListener('mouseout', function() {
+    imageContainer.style.animationPlayState = 'running';
+  });
+
+  // On mobile screens, stop scrolling on click
+  if (window.innerWidth <= 768) {
+    let isScrolling = true;
+    imageContainer.addEventListener('click', function() {
+      if (isScrolling) {
+        imageContainer.style.animationPlayState = 'paused';
+      } else {
+        imageContainer.style.animationPlayState = 'running';
+      }
+      isScrolling = !isScrolling;
+    });
+  }
+</script>
+</section>
+<section class="image-scroller">
+  <div class="image-container">
+    <!-- Add Images to scroll -->
+    <img src="basket.png" alt="Image 1">
+    <img src="basket2.png" alt="Image 2">
+    <img src="basket3.png" alt="Image 3">
+    <img src="basket4.png" alt="Image 4">
+    <img src="basket5.png" alt="Image 5">
+    <!-- Duplicate Images for seamless loop -->
+    <img src="basket.png" alt="Image 1">
+    <img src="basket2.png" alt="Image 2">
+    <img src="basket3.png" alt="Image 3">
+    <img src="basket4.png" alt="Image 4">
+    <img src="basket5.png" alt="Image 5">
+  </div>
+<style>
+  /* Container for the scrolling images */
+  .image-scroller {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .image-container {
+    display: flex;
+    animation: scroll-images 20s linear infinite;
+  }
+
+  /* Default image size for larger screens */
+  .image-container img {
+    width: 300px; /* Larger image size for large screens */
+    height: 200px; /* Fixed height */
+    object-fit: cover;
+    margin-right: 20px; /* Space between images */
+  }
+
+  /* Continuous scrolling animation */
+  @keyframes scroll-images {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Responsive styling for small screens */
+  @media (max-width: 768px) {
+    .image-scroller {
+      width: 100%;
+    }
+
+    .image-container img {
+      width: 200px; /* Slightly bigger image size for mobile */
+      height: 130px; /* Adjusted height for mobile */
+      margin-right: 15px; /* Adjust space for smaller screens */
+    }
+  }
+</style>
+<script>
+  const imageContainer = document.querySelector('.image-container');
+
+  // On large screens, pause scrolling on hover
+  imageContainer.addEventListener('mouseover', function() {
+    imageContainer.style.animationPlayState = 'paused';
+  });
+
+  imageContainer.addEventListener('mouseout', function() {
+    imageContainer.style.animationPlayState = 'running';
+  });
+
+  // On mobile screens, stop scrolling on click
+  if (window.innerWidth <= 768) {
+    let isScrolling = true;
+    imageContainer.addEventListener('click', function() {
+      if (isScrolling) {
+        imageContainer.style.animationPlayState = 'paused';
+      } else {
+        imageContainer.style.animationPlayState = 'running';
+      }
+      isScrolling = !isScrolling;
+    });
+  }
+</script>
+</section>
+<section class="why-choose-us" id="#why">
+  <h2 class="section-title" style="color: #2e7d32;">Why Choose Us</h2>
+  <div class="icon-columns">
+    <!-- Column 1: Crafted with Care -->
+    <div class="icon-column">
+      <img src="basket.png" alt="Crafted with Care" class="column-icon"> <!-- Image for crafted with care -->
+      <h3 class="column-title">Crafted with Care</h3>
+      <p class="column-text">Each product is thoughtfully designed and carefully crafted to ensure the highest quality.</p>
+    </div>
+
+    <!-- Column 2: Handmade with Love -->
+    <div class="icon-column">
+      <img src="basket2.png" alt="Handmade with Love" class="column-icon"> <!-- Image for handmade with love -->
+      <h3 class="column-title">Handmade with Love</h3>
+      <p class="column-text">Our artisans put love and attention into each piece, making every product unique and special.</p>
+    </div>
+
+    <!-- Column 3: Unique & Authentic -->
+    <div class="icon-column">
+      <img src="basket3.png" alt="Unique & Authentic" class="column-icon"> <!-- Image for uniqueness -->
+      <h3 class="column-title">Unique & Authentic</h3>
+      <p class="column-text">Every product is one-of-a-kind, telling its own distinct story and bringing character to your home.</p>
+    </div>
+  </div>
+
+
+<style>
+  /* Why Choose Us Section */
+  .why-choose-us {
+    background-color: #fffad9;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  /* Icon Columns */
+  .icon-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .icon-column {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .icon-column:hover {
+    transform: translateY(-10px);
+  }
+
+  .column-icon {
+    width: 120px; /* Adjust the size of the image */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* Make the image rounded */
+    margin-bottom: 20px;
+  }
+
+  .column-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .column-text {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .icon-columns {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icon-column {
+      width: 90%;
+      margin: 10px 0;
+    }
+  }
+</style>
+</section>
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-section">
+    <h2>What Our Customers Say...</h2>
+    
+    <!-- Testimonials Container -->
+    <div class="testimonials-container" id="testimonials-container">
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "The products are amazing! I've never been more satisfied with my purchase. Highly recommend!"
+        </p>
+        <h4 class="testimonial-author">- Gourav</h4>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Exceptional quality and great customer service. I will definitely buy again!"
+        </p>
+        <h4 class="testimonial-author">- Divya</h4>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Sweera by Pine Trunk exceeded my expectations. The attention to detail is outstanding!"
+        </p>
+        <h4 class="testimonial-author">- Vinayak </h4>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Amazing craftsmanship and quick delivery. I'm thoroughly impressed!"
+        </p>
+        <h4 class="testimonial-author">- Thanmayee</h4>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "This brand always goes above and beyond. Their attention to detail is second to none."
+        </p>
+        <h4 class="testimonial-author">- Kishore </h4>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Top-notch service and quality. Will definitely shop again!"
+        </p>
+        <h4 class="testimonial-author">- Shiva</h4>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    /* Testimonials Section */
+    .testimonials-section {
+      background-color: #fffad9; /* Green Background */
+      padding: 40px 20px;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      color: #2e7d32; /* White text for contrast */
+      position: relative;
+    }
+  
+    .testimonials-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+  
+    /* Testimonials Container */
+    .testimonials-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto; /* Enables manual horizontal scrolling */
+      padding-bottom: 20px;
+      justify-content: flex-start;
+      scroll-snap-type: x mandatory; /* Ensures smooth snapping of items */
+      cursor: pointer;
+    }
+  
+    /* Individual Testimonial Card */
+    .testimonial-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      min-width: 250px;
+      text-align: left;
+      transition: transform 0.3s ease-in-out;
+      scroll-snap-align: start; /* Ensures that cards snap into place when scrolling */
+    }
+  
+    .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .testimonial-text {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+  
+    .testimonial-author {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2e7d32; /* Green text for authors */
+    }
+  
+    /* Responsive Styles for Large Screens */
+    @media (min-width: 768px) {
+      .testimonials-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row on larger screens */
+        gap: 30px;
+        overflow-x: hidden; /* Disable horizontal scroll for larger screens */
+      }
+    }
+  
+    /* Scroll Styles for Small Screens */
+    @media (max-width: 768px) {
+      .testimonials-container {
+        flex-direction: row;
+        gap: 10px;
+        overflow-x: auto; /* Horizontal scroll on small screens */
+      }
+    }
+  </style>
+  
+  
+</section>
+<section class="inquiry-section" id="inquiry">
+  <h2 class="headline" style="color: #2e7d32;">Interested in Our Products?</h2>
+  <p class="body-text">Reach out to us for orders and inquiries.</p>
+
+  <!-- Contact Form -->
+  <form id="contact-form" class="contact-form" action="https://script.google.com/macros/s/AKfycbyceK41MCn0vOH-qX-RA4UKRwWvRvOsOKz1eArSmi8R2RdPB80lqo23fe06DQLsBXQY/exec" method="POST">
+    <!-- Name Input -->
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your Name">
+    </div>
+
+    <!-- Email Input -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Your Email">
+    </div>
+
+    <!-- Message Input -->
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your Message (Optional)"></textarea>
+    </div>
+
+    <!-- Product Dropdown -->
+    <div class="form-group">
+      <label for="product">Select Product of Interest</label>
+      <select id="product" name="product">
+        <option value="product1">Product 1</option>
+        <option value="product2">Product 2</option>
+        <option value="product3">Product 3</option>
+        <option value="product4">Product 4</option>
+      </select>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="cta-button">Submit Inquiry</button>
+  </form>
+
+  <!-- Automated Email Button -->
+  <button class="email-button" onclick="sendMail()">Email Us</button>
+      
+   <p class="info-text">Reach out to us at <a href="mailto:adiamineni@gmail.com" onclick="sendMail(event)">adiamineni@gmail.com</a> for any questions .</p>
+  
+   <script>
+    
+  function sendMail(event) {
+    if (event) event.preventDefault(); // Prevent form submission
+
+    const mailTo = "adiamineni@gmail.com"; // Target email address
+    const subject = "Inquiry from Your Website"; // Email subject
+    const body = "Hello,\n\nI would like to learn more about your services.\n\nBest Regards,"; // Email body content
+
+    // URL encode the body, ensuring the line breaks are maintained
+    const encodedBody = encodeURIComponent(body);
+
+    // Gmail app URL (for mobile users with Gmail app installed)
+    const gmailAppUrl = `googlegmail://co?to=${mailTo}&subject=${encodeURIComponent(subject)}&body=${encodedBody}`;
+
+    // Gmail web URL (for users on desktop or mobile without Gmail app)
+    const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(mailTo)}&su=${encodeURIComponent(subject)}&body=${encodedBody}`;
+
+    // Check if the user is on a mobile device
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Confirm if user wants to open the email in the Gmail app
+      const userChoice = confirm("Would you like to open this email in your Gmail app? Click 'Cancel' to open it in Gmail Web.");
+      
+      if (userChoice) {
+        // Try to open Gmail app
+        const openedGmailApp = window.open(gmailAppUrl, '_blank');
+        
+        // If Gmail app didn't open, fallback to Gmail web
+        setTimeout(() => {
+          if (!openedGmailApp || openedGmailApp.closed) {
+            alert("Failed to open Gmail app, opening in Chrome.");
+            window.open(gmailWebUrl, '_blank');
+          }
+        }, 1000);
+      } else {
+        // Open Gmail Web
+        window.open(gmailWebUrl, '_blank');
+      }
+    } else {
+      // On desktop, open Gmail web directly
+      window.open(gmailWebUrl, '_blank');
+    }
+  }
+</script>
+
+
+
+  
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyFG-7vwLc7SMyWjD-8MS5L2I6u3I49s-HmZE8pQLA0CUuGc03_5rdKyeJvvb6_-fZL/exec '
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! Form is submitted" ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+</script>
+
+<style>
+  /* Inquiry Section */
+  .inquiry-section {
+    background-color: #fffad9;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+
+  .headline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .body-text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fffad9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .form-group textarea {
+    height: 100px;
+    resize: vertical;
+  }
+
+  /* Submit Button */
+  .cta-button {
+    background-color: #2e7d32; /* Green background */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #1b5e20; /* Darker green on hover */
+  }
+
+  /* Automated Email Button */
+  .email-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #008cba; /* Blue background */
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .email-button:hover {
+    background-color: #006f8e; /* Darker blue on hover */
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .headline {
+      font-size: 2rem;
+    }
+
+    .body-text {
+      font-size: 1rem;
+    }
+
+    .cta-button {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+
+    .email-button {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  }
+</style>
+</section>
+<footer>
+  <div class="footer">
+    <!-- Centered Logo -->
+    <div class="footer-logo">
+      <img src="sweera1.png" alt="Sweera by Pine Trunk">
+    </div>
+  
+    <div class="footer-container">
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#our-story">Our Story</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/9573527550?text=Hi" target="_blank" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i>
+          
+        </a>
+      </div>
+  
+      <!-- Contact Information -->
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Email: info@sweera.com</p>
+        <p>whatsapp us at :  </p>
+        
+      </div>
+    </div>
+  
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+      <p>© Sweera by Pine Trunk. All rights reserved.</p>
+    </div>
+  </div>
+  
+  <style>
+    /* Footer Styles */
+    .footer {
+      background-color: #2e7d32 !important; /* Green background */
+      color: #ffffff; /* White text */
+      padding: 20px 20px 40px; /* Space for logo on top */
+      font-family: 'Arial', sans-serif;
+    }
+  
+    /* Centered Logo Section */
+    .footer-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-logo img {
+      max-width: 150px;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .footer-links,
+    .footer-social,
+    .footer-contact {
+      flex: 1;
+      margin-bottom: 20px;
+    }
+  
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .footer-links ul li {
+      margin-bottom: 10px;
+    }
+  
+    .footer-links ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 0.3s, background-color 0.3s;
+    }
+  
+    .footer-links ul li a:hover {
+      color: #2e7d32;
+      background-color: #fdf2c4; /* Cream hover background */
+      padding: 5px;
+      border-radius: 5px;
+    }
+  
+    .footer-social a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 24px;
+      margin-right: 15px;
+      transition: color 0.3s, background-color 0.3s;
+    }
+  
+    .footer-social a:hover {
+      color: #2e7d32 !important;
+      background-color: #fdf2c4; /* Cream hover background */
+      padding: 5px;
+      border-radius: 50%;
+    }
+  
+    .footer-contact p {
+      margin: 5px 0;
+    }
+  
+    .footer-bottom {
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #ffffff;
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+  
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+  
+      .footer-links,
+      .footer-social,
+      .footer-contact {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+  
+  <!-- Font Awesome for Social Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</footer>  
+</body>
+</html>
